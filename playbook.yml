@@ -16,6 +16,6 @@
     
     - name: Restart Apache
       include_role:
-        name: restartApache
+        name: reloadApache
 
         

@@ -2,11 +2,11 @@
 - name: Restart Apache on Debian OS
   service: 
     name: apache2
-    state: restarted
+    state: reload
   when: ansible_facts['os_family'] == "Debian"
 
 - name: Restart Apache on Debian OS
   service: 
     name: httpd
-    state: restarted
+    state: reload
   when: ansible_facts['os_family'] == "RedHat"
