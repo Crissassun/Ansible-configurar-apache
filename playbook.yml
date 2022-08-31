@@ -1,0 +1,21 @@
+---
+- name: Deploy resume website in CentOS using Apache
+  hosts: all
+  gather_facts: true
+  become: true
+  tasks:
+  
+    - name: Role to Install Apache
+      include_role:
+        name: apache
+
+    
+    - name: Deploy our resume
+      include_role:
+        name: website
+    
+    - name: Restart Apache
+      include_role:
+        name: restartApache
+
+        
