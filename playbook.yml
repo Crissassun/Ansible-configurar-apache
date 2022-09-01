@@ -1,5 +1,5 @@
 ---
-- name: Deploy resume website in CentOS using Apache
+- name: Deploy resume website using Apache
   hosts: all
   gather_facts: true
   become: true
